@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blackat</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/CatLoad.css" rel="stylesheet">
+	<link rel="shortcut icon" href="css/image/blackatIcon.png" type="image/png">
+</head>
+
+<body onload="LoadCat()">
+<div class="container">
+
+	<div id="loader">
+		<div id="window"></div>
+		<div id="cat"></div>
+	</div>
+	
+	<div style="display:none;" id="myDiv" class="background">
+		<img class="background" src="css\image\rama2.0.png">
+		<div class="upbtns">
+			<div id="lampa"></div>
+			<audio id="Wow" src="signal.mp3" controls></audio>
+			<div class="btnRedGrey">
+				<div class="btn_red" onclick="myFunction()">
+					<img class="btn_red" src="css\image\nopkaGO.png">
+				</div>		
+				<div class="btn_grey">
+					<img class="btn_grey" src="css\image\podlogkaGO.png">
+				</div>
+			</div>	
+			<div id="backbtn" onclick="Calling404()"></div>
+			<div class="btnGreenBlue">
+				<div id="greenbtn" onclick="card()"></div>
+				<div id="bluebtn" onclick="contact()"></div>
+			</div>
+			<div id="lightbtn"></div>
+		</div>
+		<div class="downbtns">
+			<div class="bottle" id="bot">
+				<img class="bottle" id="im" src="css\image\limonad1.png">
+			</div>
+			
+			<div id="datchik">
+			</div>
+			
+			<div id="card" class="card">
+				<img  class="card" src="css\image\tvport2.png">
+			</div>
+		</div>	
+			
+					
+	</div>
+</div>
+
+	<script src="RedScript.js"></script>
+	<script src="Animation.js"></script>
+
+</body>
+</html>

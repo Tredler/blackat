@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    background-color:#000;
+
+}
+.f404  {
+    top:-12vh;
+    position: absolute;
+    display:block;
+    min-height: 100vh;
+    max-width: 120vh;
+    min-width: 100vh;
+    left:50%;
+    Transform:translate(-52%);
+    background: url(image/404.gif) no-repeat center/contain;
+}

@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blackat</title>
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/Snow.css" rel="stylesheet">
+    <link href="css/CatLoad.css" rel="stylesheet">
+    <link rel="shortcut icon" href="css/image/blackatIcon.png" type="image/png">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="Logic.js" async></script>
+</head>
+
+<body onload="LoadCat()">
+<section id="snow"></section>
+<div class="container">
+    <div id="loader">
+		<div id="window"></div>
+		<div id="cat"></div>
+	</div>
+        <div id="sl" class="slides">
+            <div style="display:none;" id="myDiv" class="background">
+                <div class="ball"></div>
+                <div class="interactive">
+
+                    <audio id="audio1" controls="controls"></audio>
+                    <div id="aud">
+                    </div>
+                    
+                    <audio id="fonts"  controls loop>
+                        <source src="css/theme.mp3" type="audio/mpeg">
+                    </audio>
+                    <div id="fonOff">
+                    </div>
+                    <div id="AP" class="buttom_switch">
+                    </div>
+                    <div class="buttom_rewind">
+                        <div id='btnPrev'></div>
+                        <div id='btnNext'></div>
+                    </div>
+                    <div id="teleport">
+                    </div>
+                    <div id="full_screen">
+                    </div>
+
+                </div>
+                <div class="icicle">
+                    <div id="c1"></div>
+                    <div id="c2"></div>
+                    <div id="c3"></div>
+                    <div id="c4"></div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+<script src="Animation.js" async></script>
+
+</body>
+</html>

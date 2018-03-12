@@ -1,0 +1,253 @@
+
+#loader{display:flex; flex-diration: column;}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+}
+
+.background{
+    position: relative;
+    max-width: 250%;
+    min-width: 205%;
+    min-height: 100vh;
+    margin-top: 60%;
+    left:100%;
+    Transform:translate(-69%);
+    background: url(image/tv.png) no-repeat center/contain;
+}
+
+
+
+.slides{
+    position: absolute;
+    width: 90vh;
+    margin-top: 32vh;
+    max-height: 40%;
+    max-width: 48vh;
+    min-width: 40vh;
+    background: url(image/blackat.png) no-repeat center/contain;
+    background-color:#13c1c1;
+    background-position: 0% 28%;
+}
+
+.ball{
+    position: absolute;
+    height:30vh;
+    top: 30%;
+    min-height:25vh;
+    max-height:28vh;
+    max-width:45vh;
+    min-width:21vh;
+    left:65%;
+    background: url("image/01.png") no-repeat center/contain;
+}
+
+.ball:hover{
+    animation:ball 1.5s linear;
+    transform-origin: 50% 0%;
+}
+
+.interactive{
+    position: relative;
+    margin-left: 54%;
+    margin-top: -64%;
+    top:40vh;
+    max-width: 6vh;
+    display:flex;
+    justify-content:space-around;
+}
+
+#aud, #fonOff, .buttom_switch, .buttom_rewind, #full_screen, #teleport{
+    cursor: pointer;
+    max-width: 7vh;
+    min-width: 3vh;
+}
+#teleport , #full_screen{
+    margin-top: 492%;
+}
+
+.buttom_switch{
+    margin-top: 492%;
+    height: 3vh;
+    width: 10vh;
+    /*display:flex;*/
+    background: url('image/ap.png') no-repeat;
+    background-size: cover;
+}
+.buttom_rewind{
+    margin-top: 492%;
+    display:flex;
+}
+#btnNext,#btnPrev{
+    height: 3vh;
+    width: 5vw;
+    background: url("image/R.png") no-repeat;
+    background-size: cover;
+}
+#btnPrev{
+    background: url("image/L.png") no-repeat;
+    background-size: cover;
+}
+
+#audio1{
+	margin-top: 50vh;
+    display: none;
+}
+#fonts{
+    display: none;
+}
+
+#aud{
+    margin-top: 492%;
+    margin-left: -405%;
+    background: url("image/pleer.png") no-repeat;
+    background-size: cover;
+}
+
+#fonOff{
+    margin-top: 492%;
+    background: url("image/muzuka.png") no-repeat;
+    background-size: cover;
+}
+
+#full_screen{
+    background: url(image/rozv.png) no-repeat;
+    background-size: cover;
+    animation: play .8s steps(3) infinite;
+}
+#teleport {
+    background: url(image/naz.png) no-repeat ;
+    background-size: cover;
+
+}
+
+
+.icicle{
+    position: absolute;
+    margin-left: 54%;
+    margin-top: -11%;
+    top:40vh;
+    max-width: 6vh;
+}
+
+#c1,#c2,#c3,#c4{
+	position: absolute;
+    margin-top: 51.93vh;
+    margin-left:-37.45vh;
+    height: 7vh;
+    width: 1.8vh;
+    background: url("image/c11.png") no-repeat center/contain;
+    background-size: cover;
+}
+
+#c2{
+    margin-top:52vh;
+    margin-left: -24.86vh;
+    height: 15vh;
+    width: 2.3vh;
+    background: url("image/c12.png") no-repeat center/contain;
+	background-size:cover;
+}
+
+#c3{
+    margin-top:47.4vh;
+    margin-left: 1.7vh;
+    height: 16vh;
+    width: 2.3vh;
+    background: url("image/c13.png") no-repeat center/contain;
+}
+#c4{
+    margin-top:46.5vh;
+    margin-left: 17.2vh;
+    height: 16vh;
+    width: 2.2vh;
+    background: url("image/c14.png") no-repeat center/contain;
+}
+
+
+@keyframes play {
+    from { background-position: 0vw 0vh}
+    to { background-position: 0vw -18vh; }
+}
+
+
+@keyframes ball{
+    0%{
+        transform:rotate(0deg);
+    }
+    12%{
+        transform:rotate(10deg);
+    }
+    24%{
+        transform:rotate(-15deg);
+    }
+    36%{
+        transform:rotate(20deg);
+    }
+    48%{
+        transform:rotate(-25deg);
+    }
+    60%{
+        transform:rotate(20deg);
+    }
+    72%{
+        transform:rotate(-15deg);
+    }
+    84%{
+        transform:rotate(10deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+@keyframes c1{			/*анимация сосульки №1*/
+	0%{
+		transform:rotate(0deg)
+	}
+	10%{
+		transform:rotate(5deg)
+	}
+	20%{
+		transform:rotate(-5deg)
+	}
+	30%{
+		transform:rotate(0deg)
+	}
+	40%{
+		margin-top: 51.9vh;
+	}
+	100%{
+		margin-top:100.6vh;
+	}
+}
+@keyframes c2{					/*анимация сосульки №2*/
+	from{
+		transform:rotate(0deg);
+		margin-top:52vh;
+	}
+	to{
+		transform:rotate(-40deg);
+		margin-top:100.6vh;
+	}
+}
+@keyframes c3{					/*анимация сосульки №3*/
+	from{
+		transform:rotate(0deg);
+		 margin-top:47.4vh;
+	}
+	to{
+		transform:rotate(30deg);
+		margin-top:100.6vh;
+	}
+}
+@keyframes c4{					/*анимация сосульки №4*/
+	from{
+		transform:rotate(0deg);
+		margin-top:46.5vh;
+	}
+	to{
+		transform:rotate(-20deg);
+		margin-top:100.6vh;
+	}
+}

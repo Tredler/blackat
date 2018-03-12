@@ -1,0 +1,176 @@
+﻿body{
+	background-color:#d6d6d6;
+	overflow:hidden;
+}
+
+.background{
+	position: absolute;
+	height: 95vh;
+	max-height: 90vh;
+	width: 200vw;
+	max-width: 90vh;
+	min-width: 85vh;
+	margin-top: 2.5vh;
+	left: 50%;
+	Transform:translate(-50%);
+
+}
+
+.upbtns{											
+	position:absolute;
+	margin-top: 40%;
+	margin-left: 40%;
+	width: 85vh;
+	z-index:1;
+}
+
+.downbtns{											
+	position:absolute;
+	z-index:-1;
+	height:180vh;
+	margin-top:-40%;
+	margin-left:40%;
+}
+
+#lampa, .btn_grey{
+	height: 25vh;
+	width: 30vh;
+	background: url(image/lampa2.png) no-repeat;
+	margin-top:-37.4%;
+	margin-left:-16.7%;
+	background-size:cover;
+
+}
+
+#datchik{
+	height: 14vh;
+	width: 14vh;
+	margin-top: 57%;
+	margin-left: -50%;
+	z-index:-2;
+	background: url(image/fondathika.png) no-repeat center/contain;
+}
+
+.btnRedGrey{											
+	height:10vh;
+	width:7vh;
+	margin-top: -9%;
+	margin-left: 14%;
+}
+
+.btn_red{
+	height: 5vh;
+	width:6.3vh;
+	margin-top: 0%;
+	margin-left:0%;
+	cursor: pointer;
+
+}
+.btn_red :active{
+	margin-top: 19%;
+}
+
+.btn_grey{
+	height:4vh;
+	width:9vh;
+	margin-top: -15%;
+	margin-left: -9%;
+
+}
+
+.bottle{
+	height:57vh;
+	width:15vh;
+	margin-top:155%;
+	margin-left:-100%;
+	z-index:-5;
+}
+
+
+.card{
+	position:absolute;
+	height:25vh;
+	width:25vh;
+	margin-top:-40%;
+	margin-left:-13%;
+	z-index:-10;
+}
+
+#backbtn{
+	cursor: pointer;
+	height: 5vh;
+	width: 5%;
+	background: url(image/nazknopka2.png) no-repeat;
+	margin-top:36.7%;
+	margin-left:9%;
+	background-size:4.5vh;
+}
+.btnGreenBlue{				
+	margin-top:-17.5%;
+	margin-left:17.5%;
+}
+
+#greenbtn{
+	cursor: pointer;
+	height: 5.5vh;
+	width:9%;			/*было 5vh*/
+	background: url(image/zelknopka2.png) no-repeat;
+	background-size:5.5vh;
+}
+#bluebtn{
+	cursor: pointer;
+	height: 5.5vh;
+	width: 9%;			/*было 5vh*/
+	background: url(image/sinknopka2.png) no-repeat;
+	margin-top:1%;
+	background-size:5.5vh;
+}
+#lightbtn{
+	cursor: pointer;
+	height: 6.1vh;
+	width: 5%;			/*было 5vh*/
+	background: url(image/svet2.png) no-repeat;
+	margin-top:-39.5%;
+	margin-left:40.2%;
+	background-size:5vh;
+}
+
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(-180deg);
+	}
+}
+@keyframes bottle{
+	from{
+		margin-top:155%;
+	}
+	to{
+		margin-top:260%;
+	}
+}
+@keyframes card{
+	from{
+		margin-top:-30%;
+	}
+	to{
+		margin-top:-200%;
+	}
+}@keyframes card2{
+	 from{
+		 margin-top:-200%;
+	 }
+	 to{
+		 margin-top:-30%;
+	 }
+ }
+@keyframes lampa{
+	from{
+		background-position:0vh 0vh;
+	}
+	to{
+		background-position:0vh -85.8vh;
+	}
+}

@@ -1,0 +1,84 @@
+﻿body{
+	background-color:#73C5C5;
+}
+
+#myDiv{
+	background: url(image/rama.png) no-repeat center/contain;
+	margin-top:1vh;
+	height:97vh;
+	display:flex;
+    flex-direction:column;
+	justify-content: space-around;
+}
+
+.background{
+	top: 30%;
+}
+
+.contcts  {
+    position: relative;  /*absolute*/
+	margin-top:2vh;
+    min-height: 15vh;
+    min-width: 57vh;
+    cursor:pointer;
+	left:50%;
+    Transform:translate(-50%);
+
+}
+
+#con1{
+	position: absolute;
+	 margin-top:10vh;
+	 background: url(image/Blackat2.png) no-repeat center/contain;
+}
+
+#con2{
+	position:absolute;
+    margin-top:22vh;
+	background: url(image/Техник.png) no-repeat center/contain;
+}
+#con3{
+	position:absolute;
+    margin-top:34vh;
+	background: url(image/Типоверстальщи.png) no-repeat center/contain;
+}
+#con4{
+	position:absolute;
+    margin-top:46vh;
+	background: url(image/Витя.png) no-repeat center/contain;
+}
+#con5{
+	position:absolute;
+    margin-top:58vh;
+	background: url(image/евстафий.png) no-repeat center/contain;
+}
+#con6{
+	position:absolute;
+    margin-top:70vh;
+	background: url(image/Полякок.png) no-repeat center/contain;
+	
+}
+#con7{
+	position:absolute;
+    margin-top:86vh;
+    min-height: 9vh;
+    min-width: 10vh;
+    Transform:translate(90%);
+	background: url(image/vk.png) no-repeat center/contain;
+}
+#con8{
+	position:absolute;
+    margin-top:86vh;
+    min-height: 9vh;
+    min-width: 10vh;
+    Transform:translate(-153%);
+	background: url(image/nazad.png) no-repeat center/contain;
+}
+#con9{
+	position:absolute;
+    margin-top:86vh;
+    min-height: 9vh;
+    min-width: 10vh;
+    Transform:translate(-30%);
+	background: url(image/inst.png) no-repeat center/contain;
+}

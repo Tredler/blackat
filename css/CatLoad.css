@@ -1,0 +1,39 @@
+#window, #loader{
+    position:absolute;
+    overflow:hidden;
+    top: 5vh;
+    height:90vh;
+    width:90vh;
+    left: 50%;
+    Transform:translate(-50%);
+
+}
+
+
+#window{
+    background: url(image/fon.png) no-repeat center/contain;
+}
+
+#cat{
+    position:absolute;
+    top: 25vh;
+    height:13vh;
+    width:13vh;
+    left:36vh;
+    background: url(image/VODA.png) no-repeat center/contain;
+    animation: loadcat .7s linear infinite;
+	z-index:-1;
+}
+@keyframes loadcat {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#Wow, #audio1 {
+    margin-top: 20vh;
+    display: none;
+}
